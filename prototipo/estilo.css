@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat:wght@100&family=Roboto:wght@300&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #E1EDD8;
+	width: 100%;
+	overflow: hidden;
+}
+
+header{
+	width: 100%;
+	height: 25vh;
+	display: flex;
+}
+header img{
+	margin: auto;
+	border-radius: 2px;
+	border: solid 1px  rgb(131, 157, 119);
+	height: 20vh;
+	border-radius: 15px;
+}
+
+article{
+width: 100%;
+height: 45vh;
+}
+
+
+
+	section{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+section button{
+	background-color: #8AB98C;
+	font: 3.5em 'Fjalla One',sans-serif;
+	color: 	whitesmoke;
+	border-radius: 15px;
+	text-align: center;
+	width: 12vw;	
+	height: auto;
+	border: solid 3px #8AB98C;
+	cursor:pointer;
+	transition: background 0.5s;
+	letter-spacing: 3px;
+}
+/*Para dar a impressão ao usuário que é um botão aquilo*/
+section button:hover{
+	background: rgb(8, 165, 79);
+	font-weight: bold;
+}
+
+/*
+		PÁGINA DE ESCOLHA DO TIPO DE ATENDIMENTO. 
+*/
+
+#container-atendimento{
+	display: flex;
+	justify-content: center;
+	padding: 100px;
+}
+#container-atendimento img{
+	width: 20vw;
+	height: 40vh;
+}
+ form button:hover{
+	transform: scale(1.0);
+ }
+ form{
+	width: 20vw;
+	padding-left: 50px;
+	font-weight: bold;
+ }
+
+ label,input,select{
+	margin-bottom: 20px;
+	display: block;
+	height: 30px;
+	width: 15vw;
+	border-radius: 7px;
+ }
+ input,select{
+	background-color: #D9D9D9;
+	border: solid 1px #979E99;
+	font-size: 1em;
+	box-shadow: 2px 2px 2px black;
+	padding-left: 10px;
+ }
+form label{
+	font: 1.5em 'Roboto', sans-serif;
+	font-weight: bold;
+ }
+ form button{
+	background-color: #8AB98C;
+	text-align: center;
+	width: 8vw;
+	height: 45px;
+	border-radius: 7px;
+	margin-left: 50px;
+	font-weight: bolder;
+	cursor: pointer;
+	font-size: 1em;
+	color: white;
+	letter-spacing: 1px;
+ }
+ form button:hover{
+	color: white;
+	background-color:rgb(8, 165, 79);
+ }
+/*senha-gerada-página*/
+.senhaelogo{
+	width: 40vw;
+	margin: 0 auto;
+	background-color: #D9D9D9;
+	height: 70vh;
+	border-radius: 25px;
+	box-shadow: 5px 5px 5px black;
+	margin-top: 100px;
+}
+
+.senhaelogo p{
+	margin-top: 100px;
+	font: 6em 'Roboto',sans-serif;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 100px;
+}
+#datep{
+	font-size: 1.3em;
+	font-weight: bold;
+	text-align: center;
+}
+#logo-gerada{
+	border: solid 1px  rgb(131, 157, 119);
+	display: inline;
+}
+#logo-gerada img{
+	height: 15vh;
+	width: 100%;
+	border-radius: 15px;
+	width: 20vw;
+	float: right;
+	margin-right: 50px;
+}
+
+
+
+	/*PARA DISPOSITIVOS MÓVEIS*/
+	@media (max-width:480px){
+		/*Página indexxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx--------*/
+		header img{
+			width: 85vw;
+			border-radius: 20px;
+			border-color: rgb(131, 157, 119);
+		}
+		article{
+			height: 50vh;
+			font-size: 1.4em;
+		}
+		article h1{	
+			text-align: center; 
+			padding-top: 100px;
+			line-height: 55px;
+			}
+			section button {
+				width: 45vw;
+				height: 7vh;
+				font-size: 2.5em;
+				font-weight: bold;
+			}
+			/*--------------------página seleção.html-------------------*/
+		
+		#container-atendimento img{
+			display: none;
+		}
+		form{
+			padding-right: 200px;
+			
+		}
+		input{
+			width: 58vw;
+			height: 30px;
+		}
+		select{
+			width: 60vw;		
+		}
+		form button{
+			width: 130px;
+			height: 45px;
+			font-size: 0.8em;
+		}
+		/**********************-----------------página senha-gerada **********************/
+		.senhaelogo{
+			width: 80vw;
+			height: 60vh;
+			margin-bottom: 25px;
+		}
+		.senhaelogo p{
+			font-size: 3em;
+		}
+
+
+		#logo-gerada img{
+			width: 45vw;
+			height: 10vh;
+		}
+		
+	}
+
+	/*PARA TABLETS*/
+	@media (min-width:500px) and (max-width: 800px) {
+
+		/*PÁGINA INDEXXXXXXXXXXXX*/
+		article{
+			height: 50vh;
+			font-size: 35px;
+		}
+		article h1{	
+			text-align: center; 
+			padding-top: 100px;
+			line-height: 95px;
+			}
+			section button {
+				width: 25vw;
+				height: 7vh;
+				font-size: 2.5em;
+			}
+
+
+		/*--------------------página seleção.html-------------------*/
+		#container-atendimento img{
+			height: 35vh;
+			width: 45vw;
+		}
+		input{
+			width: 24vw;
+		}
+		select{
+			width: 25vw;	
+		}
+		form button{
+			width: 130px;
+			height: 50px;
+			margin-left: 15px;
+			margin-top: 25px;
+		}
+
+		/*********----------------página senha-gerada**********/
+		.senhaelogo{
+			width: 90vw;
+			margin-bottom: 25px;
+		}
+		.senhaelogo p{
+			font-size: 5em;
+		}
+		#logo-gerada img{
+			width: 45vw;
+			height: auto;
+		}
+	}
+
+	/*----------------------------*/
+
+	/*Para laptops médios*/
+	@media(min-width:800px) and (max-width :1024px){
+		article{
+			height: 50vh;
+			font-size: 35px;
+		}
+		article h1{	
+			text-align: center; 
+			padding-top: 100px;
+			line-height: 95px;
+			}
+			section button {
+				width: 18vw;
+				height: 7vh;
+				font-size: 2.5em;
+			}
+
+			/*PÁGINA SELEÇÃO*/
+			#container-atendimento img{
+				height: 40vh;
+				width: 30vw;
+			}
+			input{
+				width: 24vw;
+			}
+			select{
+				width: 25vw;		
+			}
+			form button{
+				width: 130px;
+				height: 50px;
+			}
+			.senhaelogo{
+				width: 70vw;
+				margin-bottom: 25px;
+			}
+			.senhaelogo p{
+				font-size: 5em;
+			}
+			#logo-gerada img{
+				width: 25vw;
+				height: 10vh;
+			}
+
+	}
+
+	/*Para desktops de 1200px*/
+	@media (min-width:1500px) and (max-width: 1950px){
+				
+				article h1{
+					padding-top: 100px;
+					font-size: 5.5em;
+					text-align: center;
+					line-height: 130px;
+				}
+				section button{
+					width: 13vw;
+				}
+	}
+
+
+/*teste notebook com 15.6*/
+@media screen and (min-width: 1920px) and (min-height: 1080px) {
+		input{
+			width: 15vw;
+			height: 3vh;
+		}
+		select{
+			width: 15.2vw;
+			height: 3vh;
+		}
+		button[type="submit"]{
+			height:5vh;
+			width: 50%;
+		}
+  }
+  
